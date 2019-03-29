@@ -1,5 +1,7 @@
 let count1 = 0;
 let count2 = 0;
+
+
 function change1(){
     switch (count1) {
         case 0:
@@ -18,6 +20,9 @@ function change1(){
             cat1.src = "cat1.jpg";
             count1 = 0;
             break;
+    }
+    if (count1 === 1 && count2 === 1 || count1 === 2 && count2 ===2 || count1===3&&count2===3 || count1===0&&count2===0){
+document.getElementById("notice").innerText='you win';
     }
 }
 
@@ -40,7 +45,11 @@ function change2(){
             count2 = 0;
             break;
     }
+    if (count1 === 1 && count2 === 1 || count1 === 2 && count2 ===2 || count1===3&&count2===3 || count1===0&&count2===0){
+        document.getElementById("notice").innerText='you win';
+    }
 }
+
 
 
 
